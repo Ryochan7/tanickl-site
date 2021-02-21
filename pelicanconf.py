@@ -32,7 +32,7 @@ SOCIAL = (('You can add links in your config file', '#'),
 DEFAULT_PAGINATION = False
 
 THEME = "themes/portfolio"
-#SITEURL = "https://ryochan7.github.io/tanickl-site"
+SITEURL = "https://ryochan7.github.io/tanickl-site"
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
