@@ -1,7 +1,7 @@
 Title: DS4Windows
 Date: 2021-03-10 19:08
 Slug: ds4windows
-Template: ds4windows
+Template: projects/ds4windows
 Skills_tags: C#, .NET, WPF
 Active_Text: February 2018 - Present
 Parent_dir: projects/
