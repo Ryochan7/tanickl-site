@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+{% block head %}
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Intro Page">
+    <meta name="author" content="tanickl">
+    <!-- Favicon -->
+    <link rel="icon" href="{{ SITEURL }}/theme/images/favicon.png">
+    <!-- Site Title -->
+    <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
+    <!-- Bootstrap 4 core CSS -->
+    <link href="{{ SITEURL }}/theme/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Styles -->
+    <link href="{{ SITEURL }}/theme/css/style.css" rel="stylesheet">
+    <link href="{{ SITEURL }}/theme/css/animate.css" rel="stylesheet">
+    <link href="{{ SITEURL }}/theme/css/owl.carousel.min.css" rel="stylesheet">
+    <link href="{{ SITEURL }}/theme/css/magnific-popup.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700" rel="stylesheet">
+    <link href="{{ SITEURL }}/theme/css/linear-icons.css" rel="stylesheet" >
+    <link href="{{ SITEURL }}/theme/css/fontawesome-all.min.css" rel="stylesheet" type="text/css">
+    <link href="{{ SITEURL }}/theme/css/custom.css" rel="stylesheet" type="text/css">
+    {% block extra_css %}{% endblock extra_css %}
+{% endblock head %}
+</head>
+
+<body>
+
+    <div id="preloader">
+        <div class="preloader">
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <div id="top"></div>
+
+    <!-- wrapper -->
+    {% block navigation %}
+    <div id="wrapper" class="center-sidebar-nav">
+
+        <!-- side navigation -->
+        <a href="#menu-toggle" id="menu-toggle" class="navbar-toggler collapsed white-bg">
+            <span class="icon-bar top-bar"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
+        </a><!-- / menu-toggle -->
+        <div id="sidebar-wrapper" class="sidebar-nav">
+            <ul class="sidebar-nav-inner">
+                <li class="nav-item">
+                    <a class="menu-item smooth-scroll" href="{{ SITEURL }}">HOME</a>
+                </li>
+                {#<li class="nav-item">
+                    <a class="menu-item smooth-scroll" href="#about">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="menu-item smooth-scroll" href="#services">SERVICES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="menu-item smooth-scroll" href="#portfolio">PORTFOLIO</a>
+                </li>
+                #}
+                <li class="sidebar-social">
+                    <a href="https://github.com/Ryochan7/" class="ml-0"  target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://gitlab.com/ryochan7"  target="_blank"><i class="fab fa-gitlab"></i></a>
+                    <a href="https://www.linkedin.com/in/travis-nickles-41712329/"  target="_blank"><i class="fab fa-linkedin"></i></a>
+                </li>
+            </ul>
+        </div>
+        <!-- / side navigation -->
+        {% endblock navigation %}
+
+        {% block content %}
+        <!-- content -->
+        <div id="page-content-wrapper">
+
+            <section id="about" class="big-section">
+                <div class="container">
+                    <div class="row vcenter">
+                        <div class="col-lg-12">
+                            <h4 class="section-title mb-3">Who am I</h4>
+                            <p class="mb-3">
+                                I am an open source developer who has been developing applications since around 2011. Learned various languages included C++, C#, PHP, and Python over that time.
+                                Currently spending most of my development time writing desktop apps in C# using WPF. Formally educated at Illinois State University majoring in Computer Science.
+                            </p>
+                        </div><!-- / column -->
+                    </div><!-- / row -->
+                </div><!-- / container -->
+            </section><!-- / about -->
+
+            <section id="services" class="bg-light">
+                <div class="inner-space-2x">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="service">
+                                    <h4 class="service-title mb-3">Desktop</h4>
+                                    <p class="service-text mb-0">
+Developed several applications in C# and C++ using the Qt toolkit. The most popular of which right now is the gamepad mapping application DS4Windows.
+                                    </p>
+                                </div><!-- / service -->
+                            </div><!-- / column -->
+
+                            <div class="col-lg-4">
+                                <div class="service">
+                                    <h4 class="service-title mb-3">Web</h4>
+                                    <p class="service-text mb-0">
+Developed web sites using various PHP tools and Python (Django framework). Drupal 7 and 8
+                                    </p>
+                                </div><!-- / service -->
+                            </div><!-- / column -->
+
+                            <div class="col-lg-4">
+                                <div class="service">
+                                    <h4 class="service-title mb-3">Mobile</h4>
+                                    <p class="service-text mb-0">Android application development using Qt Quick. Initial testing</p>
+                                </div><!-- / service -->
+                            </div><!-- / column -->
+                        </div><!-- / row -->
+
+                        <div class="spacer-2x hide-tablet">&nbsp;</div>
+                    </div><!-- / container -->
+                </div><!-- / inner-space -->
+            </section><!-- / services -->
+
+            <section id="portfolio" class="bg-light has-side-spacer">
+                <div class="container">
+                    <!-- portfolio filter -->
+                    <ul class="portfolio-filter list-inline text-center mt-0">
+                        <li><a href="#" data-group="all" class="active ml-2">ALL</a></li>
+                        <li><a href="#" data-group="Desktop">Desktop</a></li>
+                        <li><a href="#" data-group="Web">Web</a></li>
+                    </ul>
+                    <!-- / portfolio filter -->
+                </div><!-- / container -->
+
+                <div class="container">
+                    <h3 class="section-title hidden">PORTFOLIO</h3>
+                    <ul class="row portfolio lightbox list-unstyled mb-0 primary-hover" id="grid">
+                        <!-- project -->
+                        <li class="col-lg-6 col-xl-4 project" data-groups='["Desktop"]'>
+                            <figure class="portfolio-item">
+                                <div class="hovereffect">
+                                    <img class="img-responsive" src="{{ SITEURL }}/theme/images/antimicro.png" alt="Antimicro">
+                                    <div class="overlay">
+                                        <div class="hovereffect-title">
+                                            <a href="{{ SITEURL }}/theme/images/antimicro.png" class="image-lightbox" title="Antimicro">
+                                                <h5 class="project-title">Antimicro</h5>
+                                                <p class="project-skill">C++</p>
+                                            </a><!-- / project link -->
+                                        </div><!-- / hovereffect-title -->
+                                    </div><!-- / overlay -->
+                                </div><!-- / hovereffect -->
+                            </figure><!-- / portfolio-item -->
+                        </li><!-- / project -->
+
+                        <!-- project -->
+                        <li class="col-lg-6 col-xl-4 project" data-groups='["Desktop"]'>
+                            <figure class="portfolio-item">
+                                <div class="hovereffect">
+                                    <img class="img-responsive" src="{{ SITEURL }}/theme/images/ds4windows_preview.png" alt="DS4Windows" />
+                                    <div class="overlay">
+                                        <div class="hovereffect-title">
+                                            <a href="{{ SITEURL }}/theme/images/ds4windows_preview.png" class="image-lightbox" title="DS4Windows">
+                                                <h5 class="project-title">DS4Windows</h5>
+                                                <p class="project-skill">C#</p>
+                                            </a><!-- / project link -->
+                                        </div><!-- / hovereffect-title -->
+                                    </div><!-- / overlay -->
+                                </div><!-- / hovereffect -->
+                                <a href="{{ SITEURL }}/projects/ds4windows/" title="Project Page" class="text-center d-block">Project Page</a>
+                            </figure><!-- / portfolio-item -->
+                        </li><!-- / project -->
+
+                        <!-- project -->
+                        <li class="col-lg-6 col-xl-4 project" data-groups='["Desktop"]'>
+                            <figure class="portfolio-item">
+                                <div class="hovereffect">
+                                    <img class="img-responsive" src="{{ SITEURL }}/theme/images/sdl2_gamepad_mapper_prototype.png" alt="SDL2 Gamepad Mapper" />
+                                    <div class="overlay">
+                                        <div class="hovereffect-title">
+                                            <a href="{{ SITEURL }}/theme/images/sdl2_gamepad_mapper_prototype.png" class="image-lightbox" title="SDL2 Gamepad Mapper">
+                                                <h5 class="project-title">SDL2 Gamepad Mapper</h5>
+                                                <p class="project-skill">C++, QML, Qt Quick</p>
+                                            </a><!-- / project link -->
+                                        </div><!-- / hovereffect-title -->
+                                    </div><!-- / overlay -->
+                                </div><!-- / hovereffect -->
+                            </figure><!-- / portfolio-item -->
+                        </li><!-- / project -->
+
+                        <!-- project -->
+                        <li class="col-lg-6 col-xl-4 project" data-groups='["Web"]'>
+                            <figure class="portfolio-item">
+                                <div class="hovereffect">
+                                    <img class="img-responsive" src="{{ SITEURL }}/theme/images/ryochan_mezzanine_main.png" alt="Ryochan's Asylum" />
+                                    <div class="overlay">
+                                        <div class="hovereffect-title">
+                                            <a href="{{ SITEURL }}/theme/images/ryochan_mezzanine_main.png" class="image-lightbox" title="Ryochan's Asylum">
+                                                <h5 class="project-title">Ryochan's Asylum</h5>
+                                                <p class="project-skill">Django</p>
+                                            </a><!-- / project link -->
+                                        </div><!-- / hovereffect-title -->
+                                    </div><!-- / overlay -->
+                                </div><!-- / hovereffect -->
+                            </figure><!-- / portfolio-item -->
+                        </li><!-- / project -->
+                       
+                    </ul> <!-- / portfolio -->
+                </div><!-- / container -->
+            </section>
+            <!-- / portfolio -->
+
+            <a href="#top" class="scroll-to-top is-hidden smooth-scroll" data-nav-status="toggle"><i class="lnr lnr-chevron-up"></i></a>
+
+            {% endblock content %}
+
+            {% block footer %}
+            <footer class="bg-secondary has-spacer-extra-space inner-space-left inner-space-right">
+                <div class="container text-center">
+                    <p>© 2021 tanickl. Site generated using <a href="https://blog.getpelican.com/" target="_blank">Pelican SSG</a></p>
+                </div><!-- / container -->
+            </footer>
+            {% endblock footer %}
+            
+        </div><!-- / page-content-wrapper -->
+    </div><!-- / wrapper -->
+
+{% block footer_js %}
+<!-- Core JavaScript -->
+<script src="{{ SITEURL }}/theme/js/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="{{ SITEURL }}/theme/js/bootstrap.min.js"></script>
+<!-- / Core JavaScript -->
+
+<!-- preloader -->
+<script src="{{ SITEURL }}/theme/js/preloader.js"></script>
+<!-- / preloader -->
+
+{% block extra_footer_js %}
+<!-- menu-toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+<!-- / menu-toggle Script -->
+
+<!-- Smooth Scrolling -->
+<script src="{{ SITEURL }}/theme/js/jquery.easing.min.js"></script>
+<script src="{{ SITEURL }}/theme/js/smooth-scroll-nonav.js"></script>
+<!-- / Smooth Scrolling -->
+
+<!-- Portfolio Script -->
+<script src="{{ SITEURL }}/theme/js/jquery.shuffle.min.js"></script>
+<script src="{{ SITEURL }}/theme/js/portfolio.js"></script>
+<script>
+$(document).ready(function(){
+    if (Modernizr.touch) {
+        // show the close overlay button
+        $(".close-overlay").removeClass("hidden");
+        // handle the adding of hover class when clicked
+        $(".img").click(function(e){
+            if (!$(this).hasClass("hover")) {
+                $(this).addClass("hover");
+            }
+        });
+        // handle the closing of the overlay
+        $(".close-overlay").click(function(e){
+            e.preventDefault();
+            e.stopPropagation();
+            if ($(this).closest(".img").hasClass("hover")) {
+                $(this).closest(".img").removeClass("hover");
+            }
+        });
+    } else {
+        // handle the mouseenter functionality
+        $(".img").mouseenter(function(){
+            $(this).addClass("hover");
+        })
+        // handle the mouseleave functionality
+        .mouseleave(function(){
+            $(this).removeClass("hover");
+        });
+    }
+});
+</script>
+<!-- / Portfolio Script -->
+
+<!-- LightBox -->
+<script src="{{ SITEURL }}/theme/js/jquery.magnific-popup.min.js"></script>
+<script>
+// This will create a single gallery from all elements that have class "lightbox"
+$('.lightbox').each(function() {
+    $(this).magnificPopup({
+        delegate: 'a.image-lightbox', // the selector for gallery item
+        type: 'image',
+        removalDelay: 500,
+        mainClass: 'mfp-fade',
+        gallery: {
+          enabled:true
+        }
+    });
+});
+</script>
+<!-- / LightBox -->
+
+<!-- LightBox -->
+<script src="{{ SITEURL }}/theme/js/jquery.magnific-popup.min.js"></script>
+<script>
+// This will create a single gallery from all elements that have class "lightbox"
+$('.lightbox').each(function() {
+    $(this).magnificPopup({
+        delegate: 'a.image-lightbox', // the selector for gallery item
+        type: 'image',
+        gallery: {
+          enabled:true
+        }
+    });
+});
+</script>
+<!-- / LightBox -->
+
+<!-- facts counter -->
+<script src="{{ SITEURL }}/theme/js/jquery.countTo.js"></script>
+ <script>
+      $('.timer').countTo({
+        refreshInterval: 60,
+        formatter: function (value, options) {
+          return value.toFixed(options.decimals);
+        },
+      });
+</script>
+<!-- / facts counter -->
+
+<!-- Owl Carousel -->
+<script src="{{ SITEURL }}/theme/js/owl.carousel.min.js"></script>
+<script>
+$('#project-slider').owlCarousel({
+    loop:true,
+    autoplay: true,
+    margin:0,
+    smartSpeed: 1000,
+    nav:false,
+    dots:true,
+    items:1,
+    animateIn: 'fadeIn',
+    animateOut: 'fadeOut',
+})
+</script>
+
+<script>
+$('#testimonials-carousel').owlCarousel({
+    loop:true,
+    margin:20,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        768:{
+            items:1
+        },
+        1000:{
+            items:1
+        },
+        1024:{
+            items:2
+        },
+        1200:{
+            items:3
+        }
+    }
+})
+</script>
+<!-- / Owl Carousel -->
+
+<!-- Hide Nav -->
+<script src="{{ SITEURL }}/theme/js/hide-nav.js"></script>
+<!-- / Hide Nav -->
+{% endblock extra_footer_js %}
+{% endblock footer_js %}
+
+</body>
+
+</html>

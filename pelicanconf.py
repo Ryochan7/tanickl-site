@@ -32,6 +32,11 @@ SOCIAL = (('You can add links in your config file', '#'),
 DEFAULT_PAGINATION = False
 
 THEME = "themes/portfolio"
+ARTICLE_URL = "blog/{date:%Y}/{date:%b}/{date:%d}/{slug}/"
+ARTICLE_SAVE_AS = "blog/{date:%Y}/{date:%b}/{date:%d}/{slug}/index.html"
+PAGE_URL = "{parent_dir}{slug}/"
+PAGE_SAVE_AS = "{parent_dir}{slug}/index.html"
+#SITEURL = "http://localhost:8000"
 SITEURL = "https://ryochan7.github.io/tanickl-site"
 
 # Uncomment following line if you want document-relative URLs when developing
