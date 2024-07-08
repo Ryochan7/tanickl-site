@@ -1,0 +1,180 @@
+@palette:
+{
+  dark-primary: #303F9F;
+  light-primary: #C5CAE9;
+  primary: #3F51B5;
+  text: #FFFFFF;
+  accent: #00BCD4;
+  primary-text: #212121;
+  secondary-text: #757575;
+  divider: #BDBDBD;
+}
+
+#profile-pic
+{
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+}
+
+body
+{
+  color: @palette[primary-text];
+  background-color: #ffffff;
+}
+
+#navigation
+{
+  /*margin: 0em 2em 0em;*/
+}
+
+#navigation::after
+{
+  content: "";
+  clear: both;
+  display: block;
+}
+
+#navigation .navbar-brand
+{
+  /*float: left;*/
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.5rem 0rem;
+}
+
+#navigation #site-primary-nav
+{
+  /*float: right;*/
+  padding: 0rem;
+}
+
+#hero-container
+{
+  background-color: @palette[dark-primary];
+  padding: 3em 0px;
+  margin-bottom: 2em;
+}
+
+#hero-container::after
+{
+  content: "";
+  clear: both;
+  display: block;
+}
+
+#hero
+{
+  width: 60%;
+  margin: 0px auto;
+  color: @palette[text];
+}
+
+#hero-pic
+{
+  float: left;
+  margin-right: 6em;
+}
+
+#hero-info
+{
+  text-align: center;
+}
+
+#hero-tagline
+{
+  font-size: 1.5rem;
+}
+
+#hero-socials
+{
+  margin-top: 1em;
+  font-size: 2em;
+}
+
+#hero-socials a
+{
+  color: @palette[text];
+  text-decoration: none;
+}
+
+.section-divider
+{
+  border-top: 1px solid @palette[divider];
+  width: 20%;
+  margin: 2em auto;
+}
+
+.section-title
+{
+  color: @palette[dark-primary];
+  text-align: center;
+}
+
+.project-item img
+{
+  width: 92%;
+  height: auto;
+}
+
+.project-item .project-title
+{
+  color: @palette[primary];
+}
+
+.project-item a.btn
+{
+  background-color: @palette[accent];
+  border-color: @palette[accent];
+}
+
+#services .service .card-title
+{
+  color: @palette[primary];
+  text-align: center;
+}
+
+#page-footer
+{
+  color: @palette[text];
+  background-color: @palette[dark-primary];
+  padding-top: 2em;
+}
+
+#page-footer h2
+{
+  color: @palette[light-primary];
+  font-size: 1.5rem;
+}
+
+#page-footer #socials
+{
+  text-align: center;
+}
+
+#page-footer #socials a
+{
+  color: @palette[text];
+  text-decoration: none;
+  font-size: 2em;
+}
+
+
+#page-footer::after
+{
+  content: "";
+  clear: both;
+  display: block;
+}
+
+#page-footer #copyright
+{
+  text-align: center;
+}
+
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+}
